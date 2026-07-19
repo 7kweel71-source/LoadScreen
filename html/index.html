@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>Phoenix — Carregando</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+    <main id="loadscreen" class="loadscreen" aria-live="polite">
+        <section class="scene" aria-hidden="true">
+            <img class="scene-layer scene-background" src="assets/background.jpg" alt="" />
+            <img class="scene-layer scene-palms scene-palms-left" src="assets/palms-left.webp" alt="" />
+            <img class="scene-layer scene-palms scene-palms-right" src="assets/palms-right.webp" alt="" />
+            <img class="scene-layer scene-heads" src="assets/heads.webp" alt="" />
+            <div class="scene-treatment"></div>
+            <div class="scene-grain"></div>
+        </section>
+
+        <div id="heroBrand" class="hero-brand" aria-label="Phoenix">phoenix</div>
+
+        <header class="topbar">
+            <nav id="socialLinks" class="social-links" aria-label="Redes sociais"></nav>
+        </header>
+
+        <aside id="musicWidget" class="music-widget" aria-label="Controle da música" hidden>
+            <button id="musicToggle" class="music-toggle" type="button" aria-label="Pausar música" title="Pausar música">
+                <span id="musicIcon" class="music-icon" aria-hidden="true"></span>
+            </button>
+            <div class="music-copy">
+                <span id="musicStatus" class="music-status">TOCANDO AGORA</span>
+                <strong id="musicTitle" class="music-title">Ambient Gold — Harris Heller</strong>
+            </div>
+        </aside>
+
+        <div id="youtubePlayer" class="youtube-player" aria-hidden="true"></div>
+        <audio id="htmlAudioPlayer" preload="auto" crossorigin="anonymous" aria-hidden="true"></audio>
+
+        <section class="loading-panel">
+            <div class="loading-heading-row">
+                <h1 id="loadingTitle">BAIXANDO</h1>
+                <span id="loadingPercent" class="loading-percent">0%</span>
+            </div>
+
+            <div class="asset-row">
+                <div class="spinner" aria-hidden="true"></div>
+                <p id="assetPath" class="asset-path">phoenix/assets/nomedomod</p>
+            </div>
+        </section>
+
+        <div class="progress-track" aria-hidden="true">
+            <div id="progressBar" class="progress-bar"></div>
+            <div id="progressGlow" class="progress-glow"></div>
+        </div>
+    </main>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
